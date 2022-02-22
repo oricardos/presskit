@@ -9,19 +9,16 @@
 
   <body class="bg-gray-100 font-family:[Inter]">
     <header>
-      <nav
-        class="bg-black text-white h-16 flex justify-center items-center drop-shadow-lg fixed w-screen z-40"
+      <nav id="nav"
+        class="bg-black text-white h-16 flex justify-between items-center drop-shadow-lg fixed w-screen z-40 px-8 lg:px-64"
       >
-
+      <a href="#home">Presskit</a>
       <!-- menu mobile -->
-      <div class="md:hidden flex items-center">
-        mobile
-      </div>
-      <div>
-          opções do menu aqui
-      </div>
+      <button id="btn-mobile">
+        <span id="hamburguer"></span>
+      </button>
 
-        <ul class="text-center flex justify-center items-center gap-x-14 hidden md:flex">
+        <ul id="menu" class="text-center flex justify-center items-center gap-x-14">
           <li>
             <a href="#home" class="hover:cursor-pointer font-medium">Início</a>
           </li>
@@ -54,11 +51,31 @@
         "
       >
         <div
-          class="hero flex justify-center items-center h-screen backdrop-blur-sm backdrop-brightness-50"
+          class="hero flex flex-col justify-center items-center h-screen backdrop-blur-sm backdrop-brightness-50"
         >
           <h1 class="artist-name text-white text-center text-6xl font-bold">
             Ministério Morada
           </h1>
+          <ul class="flex justify-center text-white mt-16 gap-x-8 lg:gap-x-14">
+            <li>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-apple"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-spotify"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-deezer"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-soundcloud"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-amazon"></i></a>
+            </li>
+          </ul>
         </div>
       </div>
     </header>
@@ -212,6 +229,7 @@
       </div>
     </div>
 
+    <script src="./index.js"></script>
     <script
       src="https://kit.fontawesome.com/3b48aa32f5.js"
       crossorigin="anonymous"
