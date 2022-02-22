@@ -69,6 +69,10 @@ i {
     margin: 0 2rem;
 }
 
+#menu li a {
+    display: block;
+}
+
 #nav.active #menu {
     height: calc(100vh - 64px);
     visibility: visible;
