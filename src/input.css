@@ -93,6 +93,14 @@ img {
 
     #menu {
         display: flex;
+        position: initial;
+        visibility: initial;
+        height: auto;
+    }
+
+    #menu li {
+        padding: 1rem 0;
+        margin: 0;
     }
 }
 
