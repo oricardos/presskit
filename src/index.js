@@ -1,9 +1,13 @@
 const btnMobile = document.getElementById('btn-mobile');
 
-function toggleMenu(){
+function toggleMenu(event){
+    if(event.type === 'touchstart'){
+        event.preventDefault();
+    }
     const nav = document.getElementById('nav');
 
     nav.classList.toggle('active');
 }
 
-btnMobile.addEventListener('click', toggleMenu)
+btnMobile.addEventListener('click', toggleMenu);
+btnMobile.addEventListener('touchstart', toggleMenu); // evento de touch para mobile
