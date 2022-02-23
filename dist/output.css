@@ -551,6 +551,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100%;
 }
 
+.w-16 {
+  width: 4rem;
+}
+
+.w-48 {
+  width: 12rem;
+}
+
 .columns-3xs {
   -moz-columns: 16rem;
        columns: 16rem;
@@ -609,6 +617,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-slate-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#080C12\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(8 12 18 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-r {
