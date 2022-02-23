@@ -159,11 +159,3 @@ a.view-image {
         margin: 0;
     }
 }
-
-@media (min-width: 1024px) { 
-    #bio {
-        background-image: url('https://scontent.fplu16-1.fna.fbcdn.net/v/t39.30808-6/257379847_438915190938398_6194922965870485724_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=e3f864&_nc_eui2=AeHTSjt-mCV8jFlK809g2zro6CXD2PRvIpjoJcPY9G8imL9f74Pc9-AS--NM5q91jFvXCJQ_u_BnyRU7B4rxKN5m&_nc_ohc=CImHntyZ1GUAX9Y23En&_nc_ht=scontent.fplu16-1.fna&oh=00_AT9ZBZYerehKgz7JY5wIseaOejZta1KIkcSw510uPt0BZg&oe=6218C84E');
-        background-size: cover;
-        background-position: center;
-    }
-}

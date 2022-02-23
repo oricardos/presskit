@@ -531,10 +531,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
-.aspect-video {
-  aspect-ratio: 16 / 9;
-}
-
 .h-16 {
   height: 4rem;
 }
@@ -549,14 +545,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-full {
   width: 100%;
-}
-
-.w-16 {
-  width: 4rem;
-}
-
-.w-48 {
-  width: 12rem;
 }
 
 .w-32 {
@@ -632,6 +620,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
+.bg-\[url\(\'\.\/assets\/grafismo\.png\'\)\] {
+  background-image: url('./assets/grafismo.png');
+}
+
 .from-cyan-500 {
   --tw-gradient-from: #06b6d4;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(6 182 212 / 0));
@@ -639,6 +631,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .to-blue-500 {
   --tw-gradient-to: #3b82f6;
+}
+
+.bg-cover {
+  background-size: cover;
 }
 
 .bg-center {
@@ -685,6 +681,31 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .font-medium {
@@ -884,14 +905,6 @@ a.view-image {
   }
 }
 
-@media (min-width: 1024px) {
-  #bio {
-    background-image: url('https://scontent.fplu16-1.fna.fbcdn.net/v/t39.30808-6/257379847_438915190938398_6194922965870485724_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=e3f864&_nc_eui2=AeHTSjt-mCV8jFlK809g2zro6CXD2PRvIpjoJcPY9G8imL9f74Pc9-AS--NM5q91jFvXCJQ_u_BnyRU7B4rxKN5m&_nc_ohc=CImHntyZ1GUAX9Y23En&_nc_ht=scontent.fplu16-1.fna&oh=00_AT9ZBZYerehKgz7JY5wIseaOejZta1KIkcSw510uPt0BZg&oe=6218C84E');
-    background-size: cover;
-    background-position: center;
-  }
-}
-
 .hover\:cursor-pointer:hover {
   cursor: pointer;
 }
@@ -921,6 +934,10 @@ a.view-image {
     justify-content: flex-end;
   }
 
+  .md\:bg-\[url\(\'\.\/assets\/grafismo\.png\'\)\] {
+    background-image: url('./assets/grafismo.png');
+  }
+
   .md\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -935,6 +952,11 @@ a.view-image {
     padding-left: 16rem;
     padding-right: 16rem;
   }
+
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -942,17 +964,21 @@ a.view-image {
     display: flex;
   }
 
-  .lg\:h-screen {
-    height: 100vh;
-  }
-
   .lg\:w-1\/2 {
     width: 50%;
+  }
+
+  .lg\:justify-between {
+    justify-content: space-between;
   }
 
   .lg\:gap-x-14 {
     -moz-column-gap: 3.5rem;
          column-gap: 3.5rem;
+  }
+
+  .lg\:bg-\[url\(\'\.\/assets\/grafismo\.png\'\)\] {
+    background-image: url('./assets/grafismo.png');
   }
 
   .lg\:px-64 {
@@ -962,6 +988,11 @@ a.view-image {
 
   .lg\:text-left {
     text-align: left;
+  }
+
+  .lg\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 
   .lg\:backdrop-blur-sm {
