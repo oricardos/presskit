@@ -47,6 +47,11 @@ i {
     top: -7px;
 }
 
+img.logo {
+    height: 32px;
+    width: auto;
+}
+
 
 
 #menu {
@@ -95,12 +100,6 @@ figure:hover .middle {
     opacity: 1;
 }
 
-img {
-    display: block;
-    max-width: 100%;
-    border-radius: 8px;
-}
-
 .image {
     opacity: 1;
     display: block;
@@ -108,6 +107,7 @@ img {
     min-height: 50px;
     height: 100%;
     transition: .5s ease;
+    border-radius: 8px;
     backface-visibility: hidden;
     object-fit: cover;
 }
@@ -131,6 +131,15 @@ a.view-image {
     align-items: center;
     height: 100%;
     width: 100%;
+}
+
+.text-view-image {
+    background-color: #0e2182;
+    color: #fff;
+    padding: .5rem 2rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-radius: .5rem;
 }
 
 @media (min-width: 768px) {
