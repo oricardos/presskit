@@ -559,6 +559,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 12rem;
 }
 
+.w-32 {
+  width: 8rem;
+}
+
 .columns-3xs {
   -moz-columns: 16rem;
        columns: 16rem;
@@ -907,6 +911,10 @@ a.view-image {
 @media (min-width: 768px) {
   .md\:flex {
     display: flex;
+  }
+
+  .md\:w-48 {
+    width: 12rem;
   }
 
   .md\:justify-end {
